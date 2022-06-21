@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+        <!--------------------------------------------------------------------------------->
+        <!--                             Header Code                                     -->
+        <!--------------------------------------------------------------------------------->
+    <head>
+        <link rel="stylesheet" type="text/css" href="C:\Users\pokis\OneDrive\Desktop\LTTK Website\LTTK Official Site\TESTCHAPTER\episode.css">
+        <link rel="icon" type="image/x-icon" href="C:\Users\pokis\OneDrive\Desktop\LTTK Website\LTTK Official Site\favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Ch1 | Letters to the King: Official Site</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class= "logo">Letters to the King | Test Chapter</a>
+            <u1>
+                <li><a href= "C:\Users\pokis\OneDrive\Desktop\LTTK Website\LTTK Official Site\HOME\index.html">Home</a></li>
+                <li><a href= "C:\Users\pokis\OneDrive\Desktop\LTTK Website\LTTK Official Site\TOC\TOC.html" class="active">Table of Contents</a></li>
+                <li><a href= "#">Cast</a></li>
+                <li><a href= "#">FAQ</a></li>
+            </u1>
+        </header>
+
+                <!--------------------------------------------------------------------------------->
+                <!--                                   Music                                     -->
+                <!--------------------------------------------------------------------------------->
+                <div>
+                 <label class="switch">
+
+                    <div id="audio">
+
+                    <audio id="myAudio" src="TESTCHAPTER/music/enigmatic.mp3" preload="auto"></audio>
+                    <input type="checkbox" value="sound" onclick="togglePlay()">
+                    <span class="slider round"></span>
+
+                    </div>
+
+                  </label>
+
+
+                    <script>
+                        window.addEventListener('load', function(){
+                            var myAudio = document.getElementById("myAudio");
+                            
+                            myAudio.onplaying = function() {
+                            isPlaying = true;
+                            };
+                            myAudio.onpause = function() {
+                            isPlaying = false;
+                            };
+                        });
+                        
+                        var isPlaying = false;
+                        
+                        function togglePlay() {
+                            if (isPlaying) {
+                                myAudio.pause()
+                            } else {
+                                myAudio.play();
+                            }
+                        }
+                    </script>
+
+                    <b>Play Music ♫</b>  
+                </div>
+                <!--------------------------------------------------------------------------------->
+                <!--                               CONTENT                                       -->
+                <!--------------------------------------------------------------------------------->
+                <div class ="container">
+
+                    <!--COMIC PDF-->
+                    <section class="pdf">
+                        <embed style="width:60%; height:95%" src="comicpdf/19.2.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"></embed>
+                    </section>
+
+                    <!--Writing-->
+                    <section class="writing">
+                        <p> Pyruss looks a little solemn after speaking his tale. However, it was hard to tell where the stone hearted prince, now feathered highness, and mournful brother began. Erik contemplates his words for a minute. <br><br>
+            
+                            <br><br></p>
+                    </section>
+
+                    <!--VISUAL NOVEL Google Powerpoint-->
+                    <section class= "visualNovel">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR2br65fCF0Rvj9Q8xwPC0wu5hafDIZa_rZxfeNkTBu33xO4UyzKMCrAqI6FvDtiXzX9ctRly1Tc3AA/embed?start=false&loop=false&delayms=60000&rm=minimal" 
+                        frameborder="0" width="1440" height="853.5" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+                    </section>
+
+                    <!--Animatic Youtube Video-->
+                    <section>
+                        <iframe width="1680" height="945" src="https://www.youtube.com/embed/cE0wfjsybIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                
+                </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding:0;
+    /*background: url(sunset.jpg);
+    background-size: auto;
+    background-position: center;*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    max-height: fit-content;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#1c0522,rgb(0, 0, 0))
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header u1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header u1 li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header u1 li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header u1 li a:hover, header u1 li a.active {
+    background: #fff;
+    color: #2b1055
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img #moon{
+    mix-blend-mode: screen;
+}
+
+#text{
+    position: absolute;
+    right: -25;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(100px);
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    z-index: 100;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.copyright c{
+    color: white;
+    position: relative;
+}
+
+.copyright{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
