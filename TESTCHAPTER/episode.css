@@ -83,7 +83,9 @@ section{
 .writing{
     background: linear-gradient(rgb(94, 180, 214),black);
     background-size: contain;
-    
+    width:100%; 
+    min-width:1000px;
+    min-height: 100vh;
        
 }
 
