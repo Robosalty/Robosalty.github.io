@@ -4,33 +4,26 @@
 {
     margin: 0;
     padding:0;
-    /*background: url(sunset.jpg);
-    background-size: auto;
-    background-position: center;*/
+
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     max-height: fit-content;
-}
+    
 
-#header{
-    min-height:100px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
-#body{
-    min-height: 100vh;
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#1c0522,rgb(0, 0, 0))
+    background: linear-gradient(#1c0522,rgb(0, 0, 0));
+
+    float: left; 
+    display: flex; 
+    flex-wrap: wrap;
+
 }
 
 
@@ -44,7 +37,9 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
+    text-align: center;
+
+ 
 }
 
 header .logo{
@@ -54,16 +49,25 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    display: flex;
+
+
 }
 
 header u1{
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    float: left; 
+    display: flex; 
+    flex-wrap: wrap;
 }
 header u1 li{
     list-style: none;
     margin-left: 20px;
+    padding-bottom: 15px;
+
+    
 }
 
 header u1 li a{
@@ -71,6 +75,7 @@ header u1 li a{
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
+
 }
 header u1 li a:hover, header u1 li a.active {
     background: #fff;
@@ -104,19 +109,16 @@ section img{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+
+    float: left; 
+    display: flex; 
+    flex-wrap: wrap;
 }
 
 section img #moon{
     mix-blend-mode: screen;
 }
 
-#text{
-    position: absolute;
-    right: -25;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 7.5vw;
-}
 
 #btn{
     text-decoration: none;
@@ -125,9 +127,18 @@ section img #moon{
     border-radius: 40px;
     background: #fff;
     color: #2b1055;
-    font-size: 1.5em;
-    transform: translateY(100px);
+    font-size: 4em;
+    font-weight: 700;
+    font-family:'Courier New', monospace;
+    transform: translateY(50px);
+
 }
+
+#btn:hover{
+    background: rgb(0, 0, 0);
+    color: #ffffff
+}
+
 .sec{
     position: relative;
     padding: 100px;
