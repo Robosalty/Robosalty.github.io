@@ -96,6 +96,10 @@ section{
     font-size: 2em;
     text-indent: 60px;
     padding: 150px;
+
+    width:100%; 
+    min-width:1000px;
+    min-height: 100vh;
 }
   
 .writing .p .b{
