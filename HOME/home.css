@@ -20,10 +20,6 @@ body{
     overflow-x: hidden;
     background: linear-gradient(#1c0522,rgb(0, 0, 0));
 
-    float: left; 
-    display: flex; 
-    flex-wrap: wrap;
-
 }
 
 
@@ -49,8 +45,7 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    display: flex;
-
+    display: flex; 
 
 }
 
@@ -58,7 +53,7 @@ header u1{
     justify-content: center;
     align-items: center; 
     display: flex; 
-    flex-wrap: wrap;
+
 
 }
 header u1 li{
@@ -82,29 +77,34 @@ header u1 li a:hover, header u1 li a.active {
 }
 
 @media (max-width: 35em){
-    header u1{
-       --gap: 3em;
+    header .logo{
+
        position: fixed;
-       inset: 140px 0 50% 0;
-
-       flex-direction: column;
-       padding: min(4vh, 5rem) 2em;
-       background: rgba(255, 255, 255, 0.3);
-       backdrop-filter: blur(.1rem);
-
+       inset: 50px 0 50% 0;
+       display: flex;
+       text-align: center;
+       
     }
 }
 
 @media (max-width: 35em){
-    #btn{
+    header u1{
+       --gap: 3em;
        position: fixed;
-       inset: 300px 0 50% 0;
+       z-index: 1000;
+       inset: 100px 0 50% 0;
+
+       flex-direction: column;
        padding: min(4vh, 5rem) 2em;
 
-       text-align: center;
+       
+       background: rgba(255, 255, 255, 0.3);
+       backdrop-filter: blur(.1rem);
 
     }
+
 }
+
 
 section{
     position: relative;
@@ -148,7 +148,7 @@ section img #moon{
     border-radius: 40px;
     background: #fff;
     color: #2b1055;
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: 700;
     font-family:'Courier New', monospace;
     transform: translateY(50px);
@@ -158,6 +158,18 @@ section img #moon{
 #btn:hover{
     background: rgb(0, 0, 0);
     color: #ffffff
+}
+
+@media (max-width: 35em){
+    #btn{
+
+       position: fixed;
+       inset: 300px 0 50% 0;
+
+       text-align: center;
+       
+       
+    }
 }
 
 .sec{
