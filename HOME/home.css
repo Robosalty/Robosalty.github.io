@@ -28,7 +28,7 @@ body{
 
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,11 +56,10 @@ header .logo{
 
 header u1{
     justify-content: center;
-    align-items: center;
-
-    float: left; 
+    align-items: center; 
     display: flex; 
     flex-wrap: wrap;
+
 }
 header u1 li{
     list-style: none;
@@ -80,6 +79,31 @@ header u1 li a{
 header u1 li a:hover, header u1 li a.active {
     background: #fff;
     color: #2b1055
+}
+
+@media (max-width: 35em){
+    header u1{
+       --gap: 3em;
+       position: fixed;
+       inset: 140px 0 50% 0;
+
+       flex-direction: column;
+       padding: min(4vh, 5rem) 2em;
+       background: rgba(255, 255, 255, 0.3);
+       backdrop-filter: blur(.1rem);
+
+    }
+}
+
+@media (max-width: 35em){
+    #btn{
+       position: fixed;
+       inset: 300px 0 50% 0;
+       padding: min(4vh, 5rem) 2em;
+
+       text-align: center;
+
+    }
 }
 
 section{
@@ -110,9 +134,6 @@ section img{
     object-fit: cover;
     pointer-events: none;
 
-    float: left; 
-    display: flex; 
-    flex-wrap: wrap;
 }
 
 section img #moon{
