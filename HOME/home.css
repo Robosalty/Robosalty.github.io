@@ -18,7 +18,6 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
     background: linear-gradient(#1c0522,rgb(0, 0, 0));
 
 }
@@ -201,9 +200,16 @@ section img #moon{
         
      }
 
+     section{
+        padding: 30%;
+        width: device-width;
+        height: device-height;
+     }
      .sec{
         position: relative;
         inset: 70% 0 50% 0;
+
+        padding: 10px;
         background: #1c0522;
         z-index: 100;
     }
