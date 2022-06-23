@@ -207,11 +207,13 @@ b{
   width: 100%;
 }
 
+
 .mobile-nav-toggle{
   display: none;
 }
 
-@media (max-width: 35em){
+
+@media (max-width: 60em){
   header .logo{
      margin: 1.5rem;
      position: fixed;
@@ -223,7 +225,7 @@ b{
   }
 }
 
-@media (max-width: 35em){
+@media (max-width: 60em){
   .primary-navigation{
          --gap: 2em;
   
@@ -255,7 +257,7 @@ b{
           width: 2rem;
           aspect-ratio: 1;
           top: 2rem;
-          right: 0.5rem;
+          right: 2rem;
       }
   
   

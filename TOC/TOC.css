@@ -81,7 +81,7 @@ header u1 li a:hover, header u1 li a.active {
     }
 }
 
-@media (max-width: 35em){
+@media (max-width: 60em){
 .primary-navigation{
        --gap: 2em;
 
@@ -260,7 +260,7 @@ header u1 li a:hover, header u1 li a.active {
   
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 60em) {
     .column {
       width: 100%;
       z-index:9999;
