@@ -17,26 +17,6 @@
 
             <header>
                 <a href="index.html" class= "logo">Letters to the King</a>
-                    <!--------------------------------------------------------------------------------->
-                    <!--                                   Music                                     -->
-                    <!--------------------------------------------------------------------------------->
-                    <div>
-                        <label class="switch">
-       
-                           <div id="audio">
-       
-                           <audio id="myAudio" src="PROLOGUE\music\enigmatic.mp3" preload="auto"></audio>
-                           <input type="checkbox" value="sound" onclick="togglePlay()">
-                           <span class="slider round"></span>
-       
-                           </div>
-       
-                         </label>
-       
-                           <script src="TESTCHAPTER\episode.js"></script>
-       
-                           <b>Play Music ♫</b>  
-                       </div>
             
                 <button class="mobile-nav-toggle" 
                     aria-controls = "primary navigation" aria-expanded= "false">
@@ -64,12 +44,32 @@
                 </u1>
                 </nav>
             </header>
+            <!--------------------------------------------------------------------------------->
+                    <!--                                   Music                                     -->
+                    <!--------------------------------------------------------------------------------->
+                    <div>
+                        <label class="switch" id="switch">
+       
+                           <div id="audio">
+       
+                           <audio id="myAudio" src="PROLOGUE\music\enigmatic.mp3" preload="auto"></audio>
+                           <input type="checkbox" value="sound" onclick="togglePlay()">
+                           <span class="slider round"></span>
+       
+                           </div>
+       
+                         </label>
+       
+                           <script src="TESTCHAPTER\episode.js"></script>
+       
+                           <b>Play Music ♫</b>  
+                       </div>
     
                     <!--------------------------------------------------------------------------------->
                     <!--                               CONTENT                                       -->
                     <!--------------------------------------------------------------------------------->
 
-                    <div class ="container">
+                    <div class ="container" id = "container">
 
                     <!--Writing-->
                     

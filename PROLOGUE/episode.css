@@ -8,19 +8,11 @@
 }
 
 body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: rgb(0, 0, 0);
-    width: 100vw;
-    height: 100vh;
-    margin-top: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  height: 100vh;
+  margin-top: 100px;
+  background: rgb(0, 0, 0);
+  overflow-y: hidden;
 }
-
 
 header{
   position: absolute;
@@ -42,6 +34,7 @@ header .logo{
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  
 }
 
 
@@ -68,19 +61,18 @@ header u1 li a:hover, header u1 li a.active {
 
 section{
     position: relative;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     
 }
 
 .container{
     overflow-y: scroll;
-    height: 100vh;
+    height: 100%;
     scroll-snap-type: y mandatory;
-    min-height: 100vh;
     
    
 }  
@@ -88,6 +80,7 @@ section{
 .writing{
     background: linear-gradient(rgb(94, 180, 214),black);
     background-size: contain;
+    height: 100%;
     
        
 }
@@ -97,6 +90,8 @@ section{
     color: #fff;
     font-family:'Courier New', Courier, monospace;
     font-size: 2em;
+    height:100%;
+    width: 100%;
     text-indent: 60px;
     padding: 150px;
 }
@@ -129,8 +124,9 @@ section{
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-left: 100px;
-    margin-bottom: 5%;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-bottom: 2%;
   }
   
   .switch input { 
@@ -217,14 +213,15 @@ b{
 
 @media (max-width: 60em){
   header .logo{
-     margin: 1.5rem;
-     position: fixed;
-     inset: 0px 0 50% 0;
-     display: inline-block;
-     text-align: left;
-     height: 10px;
-     
-  }
+    margin: 1.5rem;
+    position: fixed;
+    inset: 0 0 50% 0;
+    display: inline-block;
+    text-align: left;
+    height: 10px;
+    padding-right: 20%;
+    
+ }
 }
 
 @media (max-width: 60em){
@@ -262,6 +259,28 @@ b{
           right: 2rem;
       }
   
+
+      .writing p {
+        color: #fff;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        height:100%;
+        width: 100%;
+        text-indent: 60px;
+        padding: 50px;
+    }
+
+
+    section{
+      scroll-snap-stop: normal;
+    }
+    
+    .container{
+      scroll-snap-type: none;
+      height: 100%;
+      width: 100%;
+
+    }
   
   }
   
