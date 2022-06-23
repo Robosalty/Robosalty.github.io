@@ -71,7 +71,7 @@ section{
 
 .container{
     overflow-y: scroll;
-    height: 100%;
+    height: 86%;
     scroll-snap-type: y mandatory;
     
    
@@ -80,7 +80,7 @@ section{
 .writing{
     background: linear-gradient(rgb(94, 180, 214),black);
     background-size: contain;
-       
+    height: 100%;   
 }
 
 
@@ -98,15 +98,22 @@ section{
   color: rgb(255, 255, 255);
   font-family:'Courier New', Courier, monospace;
   font-size: 2em;
+  height: 100%; 
   text-indent: 60px;
   padding: 150px;
 }
 
+.writing .p .d{
+  color: #fff;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1em;
+  margin-left: 1%;
+  margin-bottom: 15%;
+}
 
 .visualNovel{
     background: url(images/Eshore.jpg); 
     background-size: contain;
-    
 }
 
 
@@ -264,27 +271,22 @@ d{
       }
   
 
-      .writing{
-        height: 100%;
-      }
-
       .writing p {
         color: #fff;
         font-family:'Courier New', Courier, monospace;
-        font-size: 1.5em;
-        height:100%;
+        font-size: 100%;
+        height: 100%;
         width: 100%;
         text-indent: 60px;
-        padding: 50px;
-    }
-
-    .writing .p .b{
-      padding: 50%;
+        padding-top: 50px;
+        padding-left: 25px;
+        padding-right: 15px;
     }
 
 
     section{
       scroll-snap-stop: normal;
+  
     }
     
     .container{
