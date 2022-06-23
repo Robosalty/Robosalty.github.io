@@ -124,7 +124,7 @@ section{
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-top: 6%;
+    margin-top: 1%;
     margin-left: 5%;
     margin-bottom: 2%;
   }
@@ -280,6 +280,10 @@ b{
       height: 100%;
       width: 100%;
 
+    }
+
+    .switch{
+      margin-top: 6%;
     }
   
   }
