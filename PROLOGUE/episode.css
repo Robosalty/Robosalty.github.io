@@ -80,8 +80,6 @@ section{
 .writing{
     background: linear-gradient(rgb(94, 180, 214),black);
     background-size: contain;
-    height: 100%;
-    
        
 }
 
@@ -102,7 +100,6 @@ section{
   font-size: 2em;
   text-indent: 60px;
   padding: 150px;
-  animation: floating 3s ease-in-out infinite
 }
 
 
@@ -111,6 +108,7 @@ section{
     background-size: contain;
     
 }
+
 
 .pdf{
   background: url(images/Eshore.jpg); 
@@ -124,7 +122,6 @@ section{
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-top: 1%;
     margin-left: 5%;
     margin-bottom: 2%;
   }
@@ -186,10 +183,17 @@ b{
     color: #fff;
     font-family:'Courier New', Courier, monospace;
     font-size: 1em;
-    margin-left: 10px;
-    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-bottom: 15%;
 }
 
+d{
+  color: #fff;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1em;
+  margin-left: 1%;
+  margin-bottom: 15%;
+}
 .copyright c{
   color: white;
   font-size: .7em;
@@ -211,7 +215,9 @@ b{
 
 
 
+
 @media (max-width: 60em){
+
   header .logo{
     margin: 1.5rem;
     position: fixed;
@@ -222,9 +228,7 @@ b{
     padding-right: 20%;
     
  }
-}
 
-@media (max-width: 60em){
    .primary-navigation{
          --gap: 2em;
   
@@ -260,6 +264,10 @@ b{
       }
   
 
+      .writing{
+        height: 100%;
+      }
+
       .writing p {
         color: #fff;
         font-family:'Courier New', Courier, monospace;
@@ -270,12 +278,17 @@ b{
         padding: 50px;
     }
 
+    .writing .p .b{
+      padding: 50%;
+    }
+
 
     section{
       scroll-snap-stop: normal;
     }
     
     .container{
+      overflow-y: scroll;
       scroll-snap-type: none;
       height: 100%;
       width: 100%;
