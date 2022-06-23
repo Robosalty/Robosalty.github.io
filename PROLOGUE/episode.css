@@ -8,43 +8,50 @@
 }
 
 body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: rgb(0, 0, 0);
+    width: 100vw;
     height: 100vh;
     margin-top: 100px;
-    background: rgb(0, 0, 0);
-    overflow-y: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 
 }
 
 header .logo{
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 header u1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header u1 li{
-    list-style: none;
-    margin-left: 20px;
+  list-style: none;
+  margin-left: 20px;
 }
 
 header u1 li a{
@@ -198,4 +205,63 @@ b{
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media (max-width: 35em){
+  header .logo{
+     margin: 1.5rem;
+     position: fixed;
+     inset: 0px 0 50% 0;
+     display: inline-block;
+     text-align: left;
+     height: 10px;
+     
+  }
+}
+
+@media (max-width: 35em){
+  .primary-navigation{
+         --gap: 2em;
+  
+         position: fixed;
+         z-index: 1000;
+         inset: 0 0 0 30%;
+  
+         flex-direction: column;
+         padding: min(30vh, 10rem) 2em;
+  
+         
+         background: rgba(0, 0, 0, 0.6);
+         backdrop-filter: blur(.1rem);
+  
+         transform: translateX(100%);
+  
+      }
+  
+      .primary-navigation[data-visible = "true"]{
+          transform: translateX(0%);
+      }
+  
+      .mobile-nav-toggle{
+          display: block;
+          position: absolute;
+          z-index: 9999;
+          background-image: url(TOC/images/hamburger.jpg);
+          background-repeat: no-repeat;
+          width: 2rem;
+          aspect-ratio: 1;
+          top: 2rem;
+          right: 0.5rem;
+      }
+  
+  
+  }
+  
+@-ms-viewport{
+  width: device-width;
+  height: device-height;
 }
