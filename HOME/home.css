@@ -18,6 +18,7 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: visible;
     background: linear-gradient(#1c0522,rgb(0, 0, 0));
 
 }
