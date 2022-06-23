@@ -4,7 +4,7 @@
         <!--                             Header Code                                     -->
         <!--------------------------------------------------------------------------------->
         <head>
-            <link rel="stylesheet" type="text/css" href="TESTCHAPTER\episode.css">
+            <link rel="stylesheet" type="text/css" href="PROLOGUE/episode.css">
             <link rel="icon" type="image/x-icon" href="favicon.ico">
             <script src="TOC/toc.js" defer></script>
             
@@ -17,7 +17,26 @@
 
             <header>
                 <a href="index.html" class= "logo">Letters to the King</a>
-
+                    <!--------------------------------------------------------------------------------->
+                    <!--                                   Music                                     -->
+                    <!--------------------------------------------------------------------------------->
+                    <div>
+                        <label class="switch">
+       
+                           <div id="audio">
+       
+                           <audio id="myAudio" src="PROLOGUE\music\enigmatic.mp3" preload="auto"></audio>
+                           <input type="checkbox" value="sound" onclick="togglePlay()">
+                           <span class="slider round"></span>
+       
+                           </div>
+       
+                         </label>
+       
+                           <script src="TESTCHAPTER\episode.js"></script>
+       
+                           <b>Play Music ♫</b>  
+                       </div>
             
                 <button class="mobile-nav-toggle" 
                     aria-controls = "primary navigation" aria-expanded= "false">
@@ -25,7 +44,7 @@
                 </button>
     
                 <nav>
-                <u1 id="primary-navigation" class="primary-navigation flex" 
+                <u1 id="primary-navigation" class="primary-navigation" 
                 data-visible="false">
     
                     <li>
@@ -46,26 +65,6 @@
                 </nav>
             </header>
     
-                    <!--------------------------------------------------------------------------------->
-                    <!--                                   Music                                     -->
-                    <!--------------------------------------------------------------------------------->
-                    <div>
-                     <label class="switch">
-    
-                        <div id="audio">
-    
-                        <audio id="myAudio" src="PROLOGUE\music\enigmatic.mp3" preload="auto"></audio>
-                        <input type="checkbox" value="sound" onclick="togglePlay()">
-                        <span class="slider round"></span>
-    
-                        </div>
-    
-                      </label>
-    
-                        <script src="TESTCHAPTER\episode.js"></script>
-    
-                        <b>Play Music ♫</b>  
-                    </div>
                     <!--------------------------------------------------------------------------------->
                     <!--                               CONTENT                                       -->
                     <!--------------------------------------------------------------------------------->

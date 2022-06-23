@@ -44,6 +44,7 @@ header .logo{
   letter-spacing: 2px;
 }
 
+
 header u1{
   display: flex;
   justify-content: center;
@@ -129,7 +130,7 @@ section{
     width: 60px;
     height: 34px;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
   
   .switch input { 
@@ -213,6 +214,7 @@ b{
 }
 
 
+
 @media (max-width: 60em){
   header .logo{
      margin: 1.5rem;
@@ -226,7 +228,7 @@ b{
 }
 
 @media (max-width: 60em){
-  .primary-navigation{
+   .primary-navigation{
          --gap: 2em;
   
          position: fixed;
