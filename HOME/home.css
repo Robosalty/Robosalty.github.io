@@ -34,6 +34,7 @@ header{
     align-items: center;
     z-index: 100;
     text-align: center;
+    
 
  
 }
@@ -187,6 +188,8 @@ section img #moon{
        background: rgba(0, 0, 0, 0.3);
        backdrop-filter: blur(.2rem);
 
+       overflow-x: hidden;
+
     }
 
     #btn{
@@ -216,6 +219,7 @@ section img #moon{
         height: 100% * 2;
         object-fit: cover;
         transform: scale(1.5);
+        overflow-x: hidden;
     
     }
 
