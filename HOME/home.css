@@ -161,6 +161,11 @@ section img #moon{
     align-items: center;
 }
 
+.flex{
+    display: flex;
+    gap: var(--gap, .4rem);
+}
+
 
 
 @media (max-width: 60em){
@@ -176,14 +181,14 @@ section img #moon{
      }
 
     header u1{
-       --gap: 3em;
+       --gap: 1.5em;
        position: fixed;
        z-index: 1000;
        inset: 15% 0 50% 0;
 
        flex-direction: column;
        padding: min(4vh, 5rem) 2em;
-
+       font-weight: 500; 
        
        background: rgba(0, 0, 0, 0.3);
        backdrop-filter: blur(.2rem);

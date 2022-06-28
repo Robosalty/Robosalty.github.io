@@ -19,12 +19,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,7 +32,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
+
 }
 
 header .logo{
@@ -42,6 +43,8 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+
 }
 
 header u1{
@@ -69,6 +72,21 @@ header u1 li a:hover, header u1 li a.active {
     display: none;
 }
 
+.flex{
+    display: flex;
+    gap: var(--gap, .4rem);
+}
+
+/* Container for flexboxes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+html body{
+    padding-top: 10%;
+}
+  
 @media (max-width: 60em){
     header .logo{
        margin: 1.5rem;
@@ -79,26 +97,31 @@ header u1 li a:hover, header u1 li a.active {
        height: 10px;
        
     }
+
+    html body{
+        padding-top: 50%;
+    }
 }
 
 @media (max-width: 60em){
 .primary-navigation{
-       --gap: 2em;
+       --gap: 2.5em;
 
        position: fixed;
        z-index: 1000;
        inset: 0 0 0 30%;
 
        flex-direction: column;
-       padding: min(30vh, 10rem) 2em;
-
+       padding: min(4vh, 5rem) 2em;
+       font-weight: 500;
        
        background: rgba(0, 0, 0, 0.6);
        backdrop-filter: blur(.1rem);
 
        transform: translateX(100%);
-
+       overflow-x: hidden;
     }
+
 
     .primary-navigation[data-visible = "true"]{
         transform: translateX(0%);
@@ -116,9 +139,33 @@ header u1 li a:hover, header u1 li a.active {
         right: 0.5rem;
     }
 
+    .card{
+        margin-right: 1vw;
+        width: 300px;
+
+        
+    }
+
+    .column{
+        display: flex;
+        justify-content: center;
+
+    }
+
 
 }
 
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 90em) {
+    .column {
+      display: flex;
+      justify-content: center;
+      flex: 50%;
+   
+    }
+      
+
+  }
 
 
 .card{
@@ -126,8 +173,9 @@ header u1 li a:hover, header u1 li a.active {
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text" "stats";
-    margin-left: 50px;
-    margin-top: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 20px;
 
     font-family: roboto;
     border-radius: 18px;
@@ -244,11 +292,8 @@ header u1 li a:hover, header u1 li a.active {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    z-index:9999;
+    padding-right: 20px;
+    padding-bottom: 1px;
   }
   
   /* Clear floats after the columns */
@@ -263,6 +308,8 @@ header u1 li a:hover, header u1 li a.active {
   @media screen and (max-width: 60em) {
     .column {
       width: 100%;
-      z-index:9999;
+      
     }
   }
+
+  

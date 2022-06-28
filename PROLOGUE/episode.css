@@ -220,6 +220,29 @@ d{
   display: none;
 }
 
+#btn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family:'Courier New', monospace;
+
+}
+
+#btn:hover{
+  background: rgb(0, 0, 0);
+  color: #ffffff
+}
+
+.flex{
+  display: flex;
+  gap: var(--gap, .4rem);
+}
+
 
 
 
@@ -237,7 +260,7 @@ d{
  }
 
    .primary-navigation{
-         --gap: 2em;
+         --gap: 2.5em;
   
          position: fixed;
          z-index: 1000;
