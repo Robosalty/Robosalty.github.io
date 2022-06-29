@@ -292,7 +292,7 @@ html body{
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    padding-right: 20px;
+    padding-right: 50px;
     padding-bottom: 1px;
   }
   
