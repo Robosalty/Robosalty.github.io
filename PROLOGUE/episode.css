@@ -70,7 +70,7 @@ section{
 }
 
 .container{
-    overflow-y: scroll;
+    overflow: auto;
     height: 86%;
     scroll-snap-type: y mandatory;
     
@@ -80,7 +80,7 @@ section{
 .writing{
     background: linear-gradient(rgb(94, 180, 214),black);
     background-size: contain;
-    height: 100%;   
+    height: 100%;
 }
 
 
@@ -88,27 +88,26 @@ section{
     color: #fff;
     font-family:'Courier New', Courier, monospace;
     font-size: 2em;
-    height:100%;
     width: 100%;
     text-indent: 60px;
-    padding: 150px;
+    margin-top: 7%;
+    margin-left: 3%;
+    margin-right: 3%;
+
 }
   
 .writing .p .b{
   color: rgb(255, 255, 255);
   font-family:'Courier New', Courier, monospace;
   font-size: 2em;
-  height: 100%; 
   text-indent: 60px;
-  padding: 150px;
 }
 
 .writing .p .d{
   color: #fff;
   font-family:'Courier New', Courier, monospace;
   font-size: 1em;
-  margin-left: 1%;
-  margin-bottom: 15%;
+  
 }
 
 .visualNovel{
@@ -319,18 +318,9 @@ d{
       }
   
 
-      .writing p {
-        color: #fff;
-        font-family:'Courier New', Courier, monospace;
-        font-size: 100%;
-        height: 100%;
-        width: 100%;
-        text-indent: 60px;
-        padding-top: 50px;
-        padding-left: 25px;
-        padding-right: 15px;
+    .writing{
+      height:fit-content;
     }
-
 
     section{
       scroll-snap-stop: normal;
@@ -340,7 +330,6 @@ d{
     .container{
       overflow-y: scroll;
       scroll-snap-type: none;
-      height: 100%;
       width: 100%;
 
     }
