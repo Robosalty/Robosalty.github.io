@@ -184,7 +184,7 @@ section img #moon{
        --gap: 1.5em;
        position: fixed;
        z-index: 1000;
-       inset: 15% 0 50% 0;
+       inset: 25% 0 50% 0;
 
        flex-direction: column;
        padding: min(4vh, 5rem) 2em;
