@@ -154,6 +154,21 @@ header u1 li a:hover, header u1 li a.active {
     cursor: pointer;
 }
 
+
+.copyright {
+    color: white;
+    font-size: .7em;
+    
+
+}
+
+#footer {
+    bottom: 0%;
+
+    position: fixed;
+    
+}
+
 @media screen and (max-width: 60em) {
     .about{
         width: 100%;
