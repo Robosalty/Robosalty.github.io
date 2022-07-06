@@ -121,13 +121,18 @@ section img #moon{
     font-size: 2.5em;
     font-weight: 700;
     font-family:'Courier New', monospace;
-    transform: translateY(50px);
+    z-index: 9999;
+    
 
 }
 
 #btn:hover{
-    background: rgb(0, 0, 0);
-    color: #ffffff
+    background-color:  black;
+    border: 2px solid #ffcc74;
+    color: #ffcc74;
+    transition: .4s;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
