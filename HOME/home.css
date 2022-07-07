@@ -22,7 +22,9 @@ body{
 
 }
 
-
+/**********************************************************************************************/
+/*                                       HEADER STUFF                                         */
+/**********************************************************************************************/
 header{
     position: fixed;
     top: 0;
@@ -79,6 +81,10 @@ header u1 li a:hover, header u1 li a.active {
 
 
 
+/**********************************************************************************************/
+/*                                   PARALLAX IMAGES SECTION                                  */
+/**********************************************************************************************/
+
 section{
     position: relative;
     width: 100%;
@@ -97,6 +103,7 @@ section::before{
     background: linear-gradient(to top, #1c0522, transparent);
     z-index: 1000;
 }
+
 section img{
     position: absolute;
     width: 100%;
@@ -111,6 +118,9 @@ section img #moon{
 }
 
 
+/**********************************************************************************************/
+/*                                         BUTTON STUFF                                       */
+/**********************************************************************************************/
 #btn{
     text-decoration: none;
     display: inline-block;
@@ -135,7 +145,9 @@ section img #moon{
     cursor: pointer;
 }
 
-
+/**********************************************************************************************/
+/*                                       TEXT SECTION                                         */
+/**********************************************************************************************/
 .sec{
     position: relative;
     padding: 100px;
@@ -155,17 +167,10 @@ section img #moon{
     font-family:'Courier New', Courier, monospace;
 }
 
-.copyright c{
-    color: white;
-    position: relative;
-}
 
-.copyright{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
+/**********************************************************************************************/
+/*                                MOBILE ADJUSTMENT STUFF                                     */
+/**********************************************************************************************/
 .flex{
     display: flex;
     gap: var(--gap, .4rem);
@@ -239,4 +244,18 @@ section img #moon{
 @-ms-viewport{
     width: device-width;
     height: device-height;
+}
+
+/**********************************************************************************************/
+/*                                    COPYRIGHT STUFF                                         */
+/**********************************************************************************************/
+.copyright c{
+    color: white;
+    position: relative;
+}
+
+.copyright{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
