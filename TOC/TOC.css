@@ -17,7 +17,8 @@ html body{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#1c0522,rgb(55, 99, 124));
+    background: rgba(0,0,0,0.5) url("../twigBG.jpg");
+    background-blend-mode: darken;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -44,6 +45,7 @@ header{
 
 header .logo{
     color: #fff;
+    text-shadow: 5px 5px #000000;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
@@ -67,6 +69,7 @@ header u1 li a{
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
+    font-weight: 700;
     border-radius: 20px;
 }
 header u1 li a:hover, header u1 li a.active {
@@ -89,18 +92,22 @@ header u1 li a:hover, header u1 li a.active {
   }
   
   .dropbtn {
-    background-color: #3498DB;
-    color: white;
+    background-color: #ffcc74;
+    color: rgb(0, 0, 0);
     padding: 16px;
+    font-weight: bold;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(0,0,0,1);
     
   }
   
   .dropbtn:hover{
     background-color: #000000;
     color:white;
+    transition: .4s;
+    transform: scale(1.2);
   }
   
   .dropdown {
@@ -112,7 +119,7 @@ header u1 li a:hover, header u1 li a.active {
     display: none;
     position: absolute;
     background-color: #ffffff91;
-    min-width: 160px;
+    min-width: 180px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -150,7 +157,7 @@ header u1 li a:hover, header u1 li a.active {
     font-family: roboto;
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 10px 10px 30px rgba(0,0,0,1);
     text-align: center;
 
     transition: 0.5s ease;

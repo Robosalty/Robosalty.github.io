@@ -43,13 +43,12 @@ header{
 
 header .logo{
     color: #fff;
+    text-shadow: 5px 5px #000000;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    display: flex; 
-
 }
 
 header u1{
@@ -69,6 +68,7 @@ header u1 li{
 
 header u1 li a{
     text-decoration: none;
+    font-weight: 700;
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
