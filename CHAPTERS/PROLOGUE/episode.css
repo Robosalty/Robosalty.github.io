@@ -211,16 +211,32 @@ margin-bottom: 15%;
 /**********************************************************************************************/
 
 .visualNovel{
-    background: url(images/Eshore.jpg); 
-    background-size: contain;
+  background: radial-gradient( rgba(255, 255, 255, 0.116), rgb(7, 218, 218)),rgba(0,0,0,0.9) url("../../twigBG.jpg");
+  background-blend-mode: darken;
+  backdrop-filter: blur(0.4px);
+  background-size: cover;
 }
 
 /**********************************************************************************************/
 /*                                   COMIC PDF STUFF                                          */
 /**********************************************************************************************/
 .pdf{
-  background: url(images/Eshore.jpg); 
-  background-size: contain;
+  background: radial-gradient( rgba(255, 255, 255, 0.116), rgb(7, 218, 218)),rgba(0,0,0,0.9) url("../../twigBG.jpg");
+  background-blend-mode: darken;
+  backdrop-filter: blur(0.4px);
+  background-size: cover;
+  
+}
+
+
+/**********************************************************************************************/
+/*                                   END SECTION BG                                           */
+/**********************************************************************************************/
+.end{
+  background: radial-gradient( rgba(255, 255, 255, 0.116), rgb(197, 23, 154)),rgba(0,0,0,0.7) url("../../twigBG.jpg");
+  background-blend-mode: darken;
+  backdrop-filter: blur(0.4px);
+  background-size: cover;
   
 }
 

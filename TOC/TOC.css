@@ -17,8 +17,10 @@ html body{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: rgba(0,0,0,0.5) url("../twigBG.jpg");
+    background: radial-gradient( rgba(255, 255, 255, 0.116), rgba(7, 218, 218, 0.575)),rgba(0,0,0,0.7) url("../twigBG.jpg");
     background-blend-mode: darken;
+    backdrop-filter: blur(0.3px);
+
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -103,11 +105,11 @@ header u1 li a:hover, header u1 li a.active {
     
   }
   
-  .dropbtn:hover{
+  .dropbtn:hover, .dropbtn:focus{
     background-color: #000000;
     color:white;
     transition: .4s;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   
   .dropdown {
@@ -238,7 +240,7 @@ header u1 li a:hover, header u1 li a.active {
     grid-template-rows: 1fr;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(41, 100, 56);
+    background: #ffcc74;
 }
 
 .card-stats .stat{
@@ -247,7 +249,7 @@ header u1 li a:hover, header u1 li a.active {
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .card-stats .type{
@@ -262,8 +264,8 @@ header u1 li a:hover, header u1 li a.active {
 }
 
 .card-stats .border{
-    border-left: 1px solid rgb(25, 77, 12);
-    border-right: 1px solid rgb(25, 77, 12);
+    border-left: 1px solid #bb8a37;
+    border-right: 1px solid #bb8a37;
 }
 
 .card-stats .value sup{
