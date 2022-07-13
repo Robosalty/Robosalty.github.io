@@ -49,6 +49,7 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    z-index: 9999;
 }
 
 header u1{
@@ -85,11 +86,13 @@ header u1 li a:hover, header u1 li a.active {
 /*                                   PARALLAX IMAGES SECTION                                  */
 /**********************************************************************************************/
 
+/*
 section{
     position: relative;
     width: 100%;
     height: 100vh;
     padding: 100px;
+    background-color: #ffcc74;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +107,7 @@ section::before{
     z-index: 1000;
 }
 
+
 section img{
     position: absolute;
     width: 100%;
@@ -115,8 +119,41 @@ section img{
 
 section img #moon{
     mix-blend-mode: screen;
+}*/
+
+.pop {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
+.trio{
+    width: auto;
+    height: 100vh;
+    left: 2%;
+    z-index: 99;
+    position: relative;
+    animation: animate 3s alternate infinite;
+    
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+
+@keyframes animate{
+
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 45px;
+    }
+}
 
 /**********************************************************************************************/
 /*                                         BUTTON STUFF                                       */
@@ -152,7 +189,6 @@ section img #moon{
     position: relative;
     padding: 100px;
     background: #1c0522;
-    z-index: 100;
 }
 
 
