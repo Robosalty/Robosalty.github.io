@@ -22,11 +22,16 @@ body{
 
 }
 
+.top-page{
+    background: lightcoral;
+}
+
 /**********************************************************************************************/
 /*                                       HEADER STUFF                                         */
 /**********************************************************************************************/
 header{
     position: fixed;
+    background: black;
     top: 0;
     left: 0;
     width: 100%;
@@ -34,7 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
     text-align: center;
     
 
@@ -121,21 +126,10 @@ section img #moon{
     mix-blend-mode: screen;
 }*/
 
-.pop {
-    height: 100vh;
-    z-index: 1;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
 .trio{
     width: auto;
-    height: 100vh;
-    left: 2%;
+    height: 140vh;
+    top: 2%;
     z-index: 99;
     position: relative;
     animation: animate 3s alternate infinite;
@@ -151,13 +145,24 @@ section img #moon{
         bottom: 0;
     }
     to{
-        bottom: 45px;
+        bottom: 25px;
     }
 }
 
 /**********************************************************************************************/
 /*                                         BUTTON STUFF                                       */
 /**********************************************************************************************/
+.btn{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #btn{
     text-decoration: none;
     display: inline-block;
@@ -189,6 +194,7 @@ section img #moon{
     position: relative;
     padding: 100px;
     background: #1c0522;
+    z-index: 101;
 }
 
 
