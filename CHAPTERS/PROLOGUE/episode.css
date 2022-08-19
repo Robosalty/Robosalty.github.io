@@ -199,12 +199,30 @@ b{
 }
 
 d{
-color: #fff;
+color: #ffffff;
 font-family:'Courier New', Courier, monospace;
 font-size: 1em;
-margin-left: 1%;
-margin-bottom: 15%;
+font-weight: bold;
+
 }
+
+.floating { 
+  position: absolute;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 17px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+
 
 /**********************************************************************************************/
 /*                                  VISUAL NOVEL STUFF                                        */
